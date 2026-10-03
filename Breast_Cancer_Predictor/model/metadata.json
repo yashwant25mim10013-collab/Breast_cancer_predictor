@@ -1,0 +1,173 @@
+{
+  "model_name": "Logistic Regression",
+  "sklearn_version": "1.8.0",
+  "features": [
+    "mean_radius",
+    "mean_texture",
+    "mean_perimeter",
+    "mean_area",
+    "mean_smoothness",
+    "mean_compactness",
+    "mean_concavity",
+    "mean_concave_points",
+    "mean_symmetry",
+    "mean_fractal_dimension"
+  ],
+  "n_train": 455,
+  "n_test": 114,
+  "comparison": {
+    "Logistic Regression": {
+      "cv_roc_auc": 0.9852425180598555,
+      "cv_accuracy": 0.9406593406593406
+    },
+    "Random Forest": {
+      "cv_roc_auc": 0.9841589267285862,
+      "cv_accuracy": 0.945054945054945
+    },
+    "Gradient Boosting": {
+      "cv_roc_auc": 0.9875128998968009,
+      "cv_accuracy": 0.9406593406593406
+    }
+  },
+  "test_metrics": {
+    "accuracy": 0.9298245614035088,
+    "precision": 0.8863636363636364,
+    "recall": 0.9285714285714286,
+    "f1": 0.9069767441860465,
+    "roc_auc": 0.9841269841269841
+  },
+  "confusion_matrix": [
+    [
+      67,
+      5
+    ],
+    [
+      3,
+      39
+    ]
+  ],
+  "roc": {
+    "fpr": [
+      0.0,
+      0.0,
+      0.0,
+      0.013888888888888888,
+      0.013888888888888888,
+      0.027777777777777776,
+      0.027777777777777776,
+      0.041666666666666664,
+      0.041666666666666664,
+      0.06944444444444445,
+      0.06944444444444445,
+      0.08333333333333333,
+      0.08333333333333333,
+      0.16666666666666666,
+      0.16666666666666666,
+      0.20833333333333334,
+      0.20833333333333334,
+      1.0
+    ],
+    "tpr": [
+      0.0,
+      0.023809523809523808,
+      0.7619047619047619,
+      0.7619047619047619,
+      0.8333333333333334,
+      0.8333333333333334,
+      0.8809523809523809,
+      0.8809523809523809,
+      0.9047619047619048,
+      0.9047619047619048,
+      0.9285714285714286,
+      0.9285714285714286,
+      0.9523809523809523,
+      0.9523809523809523,
+      0.9761904761904762,
+      0.9761904761904762,
+      1.0,
+      1.0
+    ]
+  },
+  "ranges": {
+    "mean_radius": {
+      "min": 6.981,
+      "max": 28.11,
+      "median": 13.34
+    },
+    "mean_texture": {
+      "min": 9.71,
+      "max": 39.28,
+      "median": 18.9
+    },
+    "mean_perimeter": {
+      "min": 43.79,
+      "max": 188.5,
+      "median": 86.18
+    },
+    "mean_area": {
+      "min": 143.5,
+      "max": 2501.0,
+      "median": 546.4
+    },
+    "mean_smoothness": {
+      "min": 0.06251,
+      "max": 0.1634,
+      "median": 0.09524
+    },
+    "mean_compactness": {
+      "min": 0.01938,
+      "max": 0.3454,
+      "median": 0.09228
+    },
+    "mean_concavity": {
+      "min": 0.0,
+      "max": 0.4268,
+      "median": 0.0594
+    },
+    "mean_concave_points": {
+      "min": 0.0,
+      "max": 0.2012,
+      "median": 0.03334
+    },
+    "mean_symmetry": {
+      "min": 0.106,
+      "max": 0.304,
+      "median": 0.1799
+    },
+    "mean_fractal_dimension": {
+      "min": 0.05024,
+      "max": 0.09744,
+      "median": 0.0613
+    }
+  },
+  "class_medians": {
+    "benign": {
+      "mean_radius": 12.21,
+      "mean_texture": 17.53,
+      "mean_perimeter": 78.18,
+      "mean_area": 460.3,
+      "mean_smoothness": 0.08983,
+      "mean_compactness": 0.07325,
+      "mean_concavity": 0.03709,
+      "mean_concave_points": 0.02331,
+      "mean_symmetry": 0.1717,
+      "mean_fractal_dimension": 0.06128
+    },
+    "malignant": {
+      "mean_radius": 17.385,
+      "mean_texture": 21.520000000000003,
+      "mean_perimeter": 114.30000000000001,
+      "mean_area": 940.45,
+      "mean_smoothness": 0.10255,
+      "mean_compactness": 0.13185,
+      "mean_concavity": 0.14905000000000002,
+      "mean_concave_points": 0.08639,
+      "mean_symmetry": 0.19075,
+      "mean_fractal_dimension": 0.061575000000000005
+    }
+  },
+  "area_ratio_bounds": [
+    0.8252710383556778,
+    1.1704396942918733
+  ]
+}
